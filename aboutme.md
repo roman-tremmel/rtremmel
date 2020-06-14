@@ -1,16 +1,12 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Biologist with expertise in pharmacogenetics, computation, and bioinformatics 
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+Currently, I am a PhD in pharmacogenomics at Dr. Margarete Fischer-Bosch institute of clinical pharmacology in Stuttgart, Germany. 
+My research focuses on genetic factors contributing to drug variability including methods for exploring large omics datasets, with a heavy focus on biomarkers, e.g. risk of adverse drug reactions, and visualization.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+I like data. Making it (yes, in the wet-lab e.g. NGS, high-throuput qPCR or arrays), statistically analysing it, visualizing it and even cleaning it. I do these things with some combination of R, Shiny and bash scripts.
 
-What else do you need?
-
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+When I am not working I love to play with my kids, and the drums with my band.
