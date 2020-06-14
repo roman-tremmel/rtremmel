@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: Biologist with expertise in pharmacogenetics, computation, and bioinformatics 
+subtitle: Biologist with expertise in pharmacogenetics, computations, and bioinformatics 
 ---
 
 Currently, I am a PhD in pharmacogenomics at Dr. Margarete Fischer-Bosch institute of clinical pharmacology in Stuttgart, Germany. 
