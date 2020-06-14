@@ -2,7 +2,7 @@
 layout: post
 title: Worldalleles
 subtitle: Shiny application to illustrate allele frequencies of pharmacogenes  
-cover-img: assets/img/avatar-icon.png
+cover-img: assets/img/app_overview.png
 tags: [pharmacogene, MAF]
 ---
 
