@@ -13,6 +13,7 @@ author: Roman Tremmel
 
 navbar-links:
   About Me: "aboutme"
+  CV: "paste_here_CV"
   #Resources:
   #  - Beautiful Jekyll: "https://beautifuljekyll.com"
   # - Learn markdown: "https://www.markdowntutorial.com/"
