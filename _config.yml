@@ -39,38 +39,23 @@ round-avatar: true
 # If you don't want to show a link to an RSS feed, set rss to "false".
 social-network-links:
   email: "roman.tremmel (at) ikp-stuttgart (dot) com"
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  rss: true
+  github: roman-tremmel
+  stackoverflow: "4870695/roman"
 #  reddit: https://scholar.google.com/citations?user=-5BC9nwAAAAJ&hl=de
-#  linkedin: daattali
-#  xing: yourname
-   stackoverflow: "4870695/roman"
-#  snapchat: deanat78
-#  instagram: deanat78
-#  youtube: user/deanat78
-#  spotify: yourname
-#  telephone: +14159998888
-#  steam: deanat78
-#  twitch: yourname
-#  yelp: yourname
-#  telegram: yourname
-#  calendly: yourname
-#  mastodon: instance.url/@username
+
 
 # --- General options --- #
 
 # Select which social network share links to show in posts
-share-links-active:
-  twitter: true
-  facebook: true
-  linkedin: true
-  vk: false
+#share-links-active:
+#  twitter: true
+#  facebook: true
+#  linkedin: true
+#  vk: false
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+url-pretty: "romantremmel.de"
 
 # Create a "tags" index page and make tags on each post clickable
 link-tags: true
