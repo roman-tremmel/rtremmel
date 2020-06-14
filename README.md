@@ -1,6 +1,6 @@
 # Personal website
 
-This is to lear how to crate a personal website or blog. We will see were this project ends. 
+This is to learn how to crate a personal website or blog. We will see were this project ends. 
 
 
 
