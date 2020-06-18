@@ -12,7 +12,7 @@ author: Roman Tremmel
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Home: "https://roman-tremmel.github.io/rtremmel/"
+  Blog: "https://roman-tremmel.github.io/rtremmel/"
   Work: "work"
   About Me: "aboutme"
   #Resources:
