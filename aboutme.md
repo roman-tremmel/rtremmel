@@ -9,4 +9,4 @@ My research focuses on genetic factors contributing to drug variability includin
 
 I like data. Making it (yes, in the wet-lab e.g. NGS, high-throuput qPCR or arrays), statistically analysing it, visualizing it and even cleaning it. I do these things with some combination of R, Shiny and bash scripts.
 
-When I am not working I love to play with my kids, and the drums with my band.
+When I am not working, I love to play with my kids, drums with my band, cycling and snowboarding.
