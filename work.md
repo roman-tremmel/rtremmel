@@ -2,7 +2,6 @@
 layout: page
 title: Work
 subtitle: Publications
-bibliography: test.bib
 ---
 
 
@@ -10,4 +9,3 @@ See all of my publications in [Google Scholar](https://scholar.google.com/citati
 
 
 
-# REFERENCES
