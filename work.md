@@ -1,9 +1,7 @@
 ---
-layout: page
+layout: minimal
 title: Work
 subtitle: Publications
-layout: minimal
-
 ---
 
 
