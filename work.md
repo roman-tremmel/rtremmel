@@ -3,6 +3,7 @@ layout: page
 title: Work
 subtitle: Publications
 layout: minimal
+
 ---
 
 
