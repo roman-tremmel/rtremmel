@@ -12,12 +12,13 @@ author: Roman Tremmel
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "aboutme"
+  Author's home: "https://roman-tremmel.github.io/rtremmel/"
   Work: "work"
+  About Me: "aboutme"
   #Resources:
   #  - Beautiful Jekyll: "https://beautifuljekyll.com"
   # - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://roman-tremmel.github.io/rtremmel/"
+  
 
 # --- Logo --- #
 
