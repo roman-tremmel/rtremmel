@@ -2,6 +2,7 @@
 layout: page
 title: Work
 subtitle: Publications
+bibliography: test.bib
 ---
 
 
