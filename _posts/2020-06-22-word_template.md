@@ -2,7 +2,7 @@
 layout: post
 title: Word template for scientifc manuscripts
 subtitle: Easy-to-use word setup for scientific writing of papers
-tags: [word, template, manuscript, paper. docx]
+tags: [word, template, manuscript, paper, docx]
 ---
 
 
