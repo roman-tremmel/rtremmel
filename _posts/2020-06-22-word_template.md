@@ -15,4 +15,4 @@ It uses only five different styles, which is enough since most journals even don
 On the title page (page one) I added a table for email adresses and [ORC-IDs](https://orcid.org/), which could directly be filled by the co-authors when circulating the draft.
 
 
-The template can be downloaded here](assets/img/word_template_papers.docx)
+The template can be downloaded [here](assets/img/word_template_papers.docx)
