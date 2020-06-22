@@ -39,6 +39,7 @@
   {% if page.css %}
     {% for css in page.css %}
       <link rel="stylesheet" href="{{ css | relative_url }}">
+      <link rel="stylesheet" href="/assets/css/academicons.min.css"/>
     {% endfor %}
   {% endif %}
 
@@ -116,7 +117,5 @@
   <!-- Staticman -->
   <link rel="stylesheet" href="{{ "/assets/css/staticman.css" | relative_url }}">
   {% endif %}
-  
-  <link rel="stylesheet" href="/assets/css/academicons.min.css"/>
   
 </head>
