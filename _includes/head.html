@@ -3,11 +3,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <title>{% if page.use-site-title %}{{ site.title }} {{ site.title-separator | default: '-' }} {{ site.description }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  
+
   {% if site.author %}
   <meta name="author" content="{{ site.author }}">
   {% endif %}
-  
+
   {% if page.subtitle %}
   <meta name="description" content="{{ page.subtitle }}">
   {% endif %}
@@ -115,7 +115,8 @@
   {% if page.comments and site.staticman.repository and site.staticman.branch %}
   <!-- Staticman -->
   <link rel="stylesheet" href="{{ "/assets/css/staticman.css" | relative_url }}">
-       <link rel="stylesheet" href="/assets/css/academicons.min.css"/>
   {% endif %}
-  
+
+  <link rel="stylesheet" href="/assets/css/academicons.min.css"/>
+
 </head>
