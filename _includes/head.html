@@ -27,6 +27,7 @@
   {% if layout.common-css %}
     {% for css in layout.common-css %}
       <link rel="stylesheet" href="{{ css | relative_url }}">
+     <link rel="stylesheet" href="/assets/css/academicons.min.css"/>
     {% endfor %}
   {% endif %}
 
