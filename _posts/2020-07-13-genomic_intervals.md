@@ -149,7 +149,7 @@ valr::bed_closest(snps_gr, genes_gr)
 As you can see, the variants within the genes showed zero distance `.dist`. The other ones showed either positive values reflecting upstream variant position according to gene region, or negative values reffering to a downstream location.
 
 
-There are a lot of more nice features and a very good documentation on [github](https://github.com/rnabioco/valr). Have fun.
+There are a lot of more nice features and a very good documentation on [github](https://github.com/rnabioco/valr). Example fils can be downloaded [here for snps](/assets/img/snps_hg19.RDS) and [here for the genes](/assets/img/genes_hg19.txt)
 
 
 
