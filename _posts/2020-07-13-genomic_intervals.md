@@ -5,15 +5,6 @@ subtitle: Matching SNPs to genes or vice versa
 tags: [interval, genomics, R]
 ---
 
----
-layout: post
-title: Indentification of genomic intervals using R
-subtitle: Matching SNPs to genes or vice versa
-#cover-img: assets/img/app_overview.png
-tags: [interval, genomics, R]
----
-
-
 One of my repeating tasks in daily work is to investigate whether genetic variations including single nucleotide variants or larger structural variants are located or cover gene regions. 
 
 Of course, when working with vcf files from e.g. NGS projects mostly the annotation already have been done by the company/bioinformatics using their own bash-pipeline. And if I'm working in my linux command line, I will also use tools such as [SnpSift](http://snpeff.sourceforge.net/SnpSift.html), [ANNOVAR](https://doc-openbio.readthedocs.io/projects/annovar/en/latest/) or even the webinterface [wannovar](http://wannovar.wglab.org/). But, there are a lot of situations when I have a small list of variants in indefinite format in R and need very fast -without any transformation- the overlap with genomic ranges. 
@@ -148,7 +139,7 @@ valr::bed_closest(snps_gr, genes_gr)
 As you can see, the variants within the genes showed zero distance `.dist`. The other ones showed either positive values reflecting upstream variant position according to gene region, or negative values reffering to a downstream location.
 
 
-There are a lot of more nice features and a very good documentation on [github](https://github.com/rnabioco/valr). Example fils can be downloaded [here for snps](/assets/img/snps_hg19.RDS) and [here for the genes](/assets/img/genes_hg19.txt)
+There are a lot of more nice features in the package and it is very good documented on [github](https://github.com/rnabioco/valr). Example fils can be downloaded [here for snps](/assets/img/snps_hg19.RDS) and [here for the genes](/assets/img/genes_hg19.txt)
 
 
 
