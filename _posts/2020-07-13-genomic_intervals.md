@@ -43,7 +43,7 @@ After downloading our file (chr7:117,253,000-118,034,999) we can load the file d
 
 ```r
 genes <- read.table("valr/genes_hg19.txt", header = T, stringsAsFactors = F, comment.char = "$") %>% as_tibble
-genes <- read.table("valr/genes_hg19.txt", header = T, stringsAsFactors = F, comment.char = "$") %>% as_tibble
+genes
 # A tibble: 7 x 16
     bin name  chrom strand txStart  txEnd cdsStart cdsEnd exonCount exonStarts exonEnds score name2
   <int> <chr> <chr> <chr>    <int>  <int>    <int>  <int>     <int> <chr>      <chr>    <int> <chr>
