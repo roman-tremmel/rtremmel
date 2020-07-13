@@ -5,18 +5,16 @@ subtitle: Matching SNPs to genes or vice versa
 tags: [interval, genomics, R]
 ---
 
-One of my repeating tasks in daily work is to investigate whether genetic variations including single nucleotide variants or larger structural variants are located or cover gene regions. 
+One of my repeating tasks at daily work is to investigate whether genetic variations including single nucleotide variants or larger structural variants are located or cover gene regions. 
 
-Of course, when working with vcf files from e.g. NGS projects mostly the annotation already have been done by the company/bioinformatics using their own bash-pipeline. And if I'm working in my linux command line, I will also use tools such as [SnpSift](http://snpeff.sourceforge.net/SnpSift.html), [ANNOVAR](https://doc-openbio.readthedocs.io/projects/annovar/en/latest/) or even the webinterface [wannovar](http://wannovar.wglab.org/). But, there are a lot of situations when I have a small list of variants in indefinite format in R and need very fast -without any transformation- the overlap with genomic ranges. 
+Of course, when working with vcf files from e.g. NGS projects mostly the annotation already have been done by the company/bioinformatics using their own bash-pipeline. And if I'm working in my linux command line environment, I will also use tools such as [SnpSift](http://snpeff.sourceforge.net/SnpSift.html), [ANNOVAR](https://doc-openbio.readthedocs.io/projects/annovar/en/latest/) or even the webinterface of the latter one [wannovar](http://wannovar.wglab.org/). But, there are a lot of situations when I have a small list of variants in indefinite format in `R` and need very fast -without any transformation- the overlap with some genomic ranges and intervals. 
 
-In the last years I used for these tasks the `library(GenomicRanges)` package, but now there is a more `tidyverse`-one available: [valr](https://cran.r-project.org/web/packages/valr/index.html) 
+In the last years I used the `library(GenomicRanges)` package for that, but now there is a more `tidyverse`-one available: [valr](https://cran.r-project.org/web/packages/valr/index.html) 
 
-
-Assume that we have a dataframe of 10 snps:
+Let's start. Assume that we have a dataframe of 10 snps:
 
 
 ```r
-library(GenomicRanges)
 library(tidyverse)
 library(valr)
 
@@ -99,7 +97,7 @@ Nice, the output (".x" is added to all `snps_gr` columns and ".y" is added to `g
 Result is confirmed using the `GenomicRanges` package: 
 
 ```r
-findOverlaps(makeGRangesFromDataFrame(snps_gr), makeGRangesFromDataFrame(genes_gr)) %>% as.data.frame() %>% bind_cols(snps_gr[.$queryHits,], genes_gr[.$subjectHits,]) %>% head
+GenomicRanges::findOverlaps(GenomicRanges::makeGRangesFromDataFrame(snps_gr), GenomicRanges::makeGRangesFromDataFrame(genes_gr)) %>% as.data.frame() %>% bind_cols(snps_gr[.$queryHits,], genes_gr[.$subjectHits,]) %>% head
   queryHits subjectHits chrom...3 start...4   end...5        name chrom...7 start...8   end...9    gene
 1         1           4      chr7 117377028 117377029  rs35683365      chr7 117350704 117513495 CTTNBP2
 2         1           5      chr7 117377028 117377029  rs35683365      chr7 117350704 117513495 CTTNBP2
