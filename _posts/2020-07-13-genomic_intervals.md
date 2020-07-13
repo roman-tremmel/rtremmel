@@ -119,7 +119,7 @@ GenomicRanges::findOverlaps(GenomicRanges::makeGRangesFromDataFrame(snps_gr), Ge
 6 NM_001363351.1
 ```
 
-Whats about the other variants? Find closets gene region using the `valr::bed_closest` function
+Whats about the other variants? Find closest gene region using the `valr::bed_closest` function
 
 ```r
 valr::bed_closest(snps_gr, genes_gr)
