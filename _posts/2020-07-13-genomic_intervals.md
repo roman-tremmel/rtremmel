@@ -89,6 +89,11 @@ valr::bed_intersect(snps_gr, genes_gr)
 11 chr7  117380621 117380622 rs4730802   117350704 117513495 CTTNBP2 NM_033427.3           1
 12 chr7  117380621 117380622 rs4730802   117350704 117513495 CTTNBP2 NM_001363351.1        1
 
+
+# In one pipe one can try
+snps %>% 
+    select(chrom,  start=chromStart,  end=chromEnd, name) %>%  
+    valr::bed_intersect(select(genes, chrom, start=txStart, end=txEnd, gene=name2, id=name))
 ```
 
 Nice, the output (".x" is added to all `snps_gr` columns and ".y" is added to `genes_gr`)shows that three SNPs overlap with four transcripts of *CTTNBP2*, respectively. 
