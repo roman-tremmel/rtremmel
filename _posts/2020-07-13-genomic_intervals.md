@@ -10,7 +10,7 @@ One of my repeating tasks in daily work is to investigate whether genetic variat
 
 Of course, when working with vcf files from e.g. NGS projects mostly the annotation already have been done by the company/bioinformatics using their own bash-pipeline. And if I'm working in my linux command line, I will also use tools such as [SnpSift](http://snpeff.sourceforge.net/SnpSift.html), [ANNOVAR](https://doc-openbio.readthedocs.io/projects/annovar/en/latest/) or even the webinterface [wannovar](http://wannovar.wglab.org/). But, there are a lot of situations when I have a small list of variants in indefinite format in R and need very fast -without any transformation- the overlap with genomic ranges. 
 
-In the last years I used for these tasks the `library(GenomicRanges)` packages, but now there is a more `tidyverse`-one available: [valr](https://cran.r-project.org/web/packages/valr/index.html) 
+In the last ~years~ I used for these tasks the `library(GenomicRanges)` packages, but now there is a more `tidyverse`-one available: [valr](https://cran.r-project.org/web/packages/valr/index.html) 
 
 
 Assume that we have 50 snps:
