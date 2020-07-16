@@ -18,7 +18,7 @@ Let's start. Assume that we have a dataframe of 10 snps:
 library(tidyverse)
 library(valr)
 
-snps = readRDS("snps_hg19.RDS")
+snps = readRDS(url("http://romantremmel.de/assets/img/snps_hg19.RDS"))
 snps
 # A tibble: 10 x 4
    chrom chromStart  chromEnd name       
@@ -42,7 +42,7 @@ Thus, we first need to download gene regions, if we haven't already a target gen
 After downloading our file (chr7:117,253,000-118,034,999) we can load the file directly in R
 
 ```r
-genes <- read.table("valr/genes_hg19.txt", header = T, stringsAsFactors = F, comment.char = "$") %>% as_tibble
+genes <- read.table("http://romantremmel.de/assets/img/genes_hg19.txt", header = T, stringsAsFactors = F, comment.char = "$") %>% as_tibble
 genes
 # A tibble: 7 x 16
     bin name  chrom strand txStart  txEnd cdsStart cdsEnd exonCount exonStarts exonEnds score name2
