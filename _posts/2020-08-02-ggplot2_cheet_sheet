@@ -2,7 +2,7 @@
 layout: post
 title: ggplot2 cheet sheet
 subtitle: find the right aesthetics for your geom
-tags: [interval, genomics, R]
+tags: [cheet sheet, ggplot2, tidyverse,R]
 ---
 
 There are a lot of cheet sheets available for ggplot2 functions such as the official [one](https://rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf). 
