@@ -2,6 +2,7 @@
 layout: post
 title: ggplot2 cheet sheet
 subtitle: find the right aesthetics for your geom
+img: assets/img/ggplot_aesthetics_cheatsheet.png
 tags: [cheet sheet, ggplot2, tidyverse,R]
 ---
 
