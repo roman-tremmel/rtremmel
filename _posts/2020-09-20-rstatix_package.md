@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Statistics using the rstatix R package
-subtitle: Simple and pipe-friendly framework for basic statistic tests
+title: Using the rstatix R-package
+subtitle: Simple and pipe-friendly framework for (basic) statistic analyses
 tags: [statistics, tidyverse, R, pairwise, tests, pvalue]
 ---
 
-Install the package via cran or from [here](https://github.com/kassambara/rstatix)
+Install the package via cran or from [here](https://github.com/kassambara/rstatix) and load the libraries
 
 
     library(tidyverse)
@@ -23,7 +23,7 @@ Simple descriptive statistics can be obtained using the tidyverse pipe as follow
     ## 1 cyl         32   4       8     6     4      8    4    2.96   6.19   1.79  0.316  0.644
     ## 2 disp        32  71.1   472   196.  121.   326  205. 140.   231.   124.   21.9   44.7
 
-the same for pairwise tests like wilcoxen tests between the variable `disp` and the factor levels of the column `"cylinders"`.
+the same easy-to-use pipe behaviour for pairwise analyses like wilcoxen tests between the variable `disp` and the factor levels of the column `"cylinders"`.
 
     mtcars %>% 
       as_tibble() %>% 
@@ -70,7 +70,7 @@ then, the results can be easily added to boxplots using ggplot and package `ggsi
 
 ![boxplot_with_pvalues](/assets/img/ggsignif-1.png)
 
-A very nice function to retrieve all comparisons of all factor levels is included as wll:
+A very nice function to retrieve all comparisons of all factor levels is included as well:
 
     mtcars %>% 
       as_tibble() %>% 
@@ -97,7 +97,7 @@ A very nice function to retrieve all comparisons of all factor levels is include
     ## [[3]]
     ## [1] 4 8
 
-And correlations are possible.
+And correlations are also possible.
 
     mtcars %>% 
       as_tibble() %>% 
@@ -118,7 +118,7 @@ And correlations are possible.
     ## 10 gear     0.48 -0.49 -0.56 -0.13  0.7   -0.580 -0.21   0.21   0.79   1      0.27 
     ## 11 carb    -0.55  0.53  0.39  0.75 -0.091  0.43  -0.66  -0.570  0.058  0.27   1
 
-and similar to the `Hmisc::rcorr()` function the pvalues are pre calculated and can be easily extracted:
+and similar to the `Hmisc::rcorr()` function the pvalues are pre-calculated and can be easily extracted afterwards:
 
     mtcars %>% 
       as_tibble() %>% 
