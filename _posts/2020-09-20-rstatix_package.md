@@ -69,7 +69,7 @@ which can be easily added to boxplots using ggplot and package
                              y_position = stats$y.position, 
                              xmin = stats$xmin, xmax = stats$xmax)
 
-![](test_files/figure-markdown_strict/ggsignif-1.png)
+![boxplot_with_pvalues](/assets/img/ggsignif-1.png)
 
 Get all comparisons of a factor
 
