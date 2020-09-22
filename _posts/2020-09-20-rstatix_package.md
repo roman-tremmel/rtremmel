@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Statistics using the rstats R package
+title: Statistics using the rstatix R package
 subtitle: Simple and pipe-friendly framework for basic statistic tests
 tags: [statistics, tidyverse, R, pairwise, tests, pvalue]
 ---
@@ -11,7 +11,7 @@ Install the package via cran or from [here](https://github.com/kassambara/rstati
     library(tidyverse)
     library(rstatix)
 	
-Simple descriptive statistics
+Simple descriptive statistics can be obtained using the tidyverse pipe as follows.
 
     mtcars %>% 
       as_tibble() %>% 
@@ -23,7 +23,7 @@ Simple descriptive statistics
     ## 1 cyl         32   4       8     6     4      8    4    2.96   6.19   1.79  0.316  0.644
     ## 2 disp        32  71.1   472   196.  121.   326  205. 140.   231.   124.   21.9   44.7
 
-or pairwise tests
+the same for pairwise tests like wilcoxen tests between the variable `disp` and the factor levels of the column `"cylinders"`.
 
     mtcars %>% 
       as_tibble() %>% 
@@ -36,7 +36,7 @@ or pairwise tests
     ## 2 disp  4      8         11    14         0 0.0000276 0.0000828 ****        
     ## 3 disp  6      8          7    14         0 0.000287  0.000574  ***
 
-    # and possible with a grouped data.frame as well
+    # and also possible with a grouped data.frame on column "am":
 
     mtcars %>% 
       as_tibble() %>% 
@@ -53,8 +53,7 @@ or pairwise tests
     ## 5     1 disp  4      8          8     2         0 0.044 0.089 ns          
     ## 6     1 disp  6      8          3     2         0 0.139 0.139 ns
 
-which can be easily added to boxplots using ggplot and package
-`ggsignif`
+then, the results can be easily added to boxplots using ggplot and package `ggsignif`. Just add xy-positions to the resulting data.frame using the function `add_xy_position` and add all variables to the `geom_signif` function. 
 
     # get pvalues and add x-y- positions for plotting
     stats <- mtcars %>% 
@@ -71,7 +70,7 @@ which can be easily added to boxplots using ggplot and package
 
 ![boxplot_with_pvalues](/assets/img/ggsignif-1.png)
 
-Get all comparisons of a factor
+A very nice function to retrieve all comparisons of all factor levels is included as wll:
 
     mtcars %>% 
       as_tibble() %>% 
@@ -86,7 +85,7 @@ Get all comparisons of a factor
     ## $V3
     ## [1] "6" "8"
 
-    # which replaces this one very well
+    # which replaces my function that I used for this task very often
     combn(unique(mtcars$cyl), 2, simplify = F)
 
     ## [[1]]
@@ -98,7 +97,7 @@ Get all comparisons of a factor
     ## [[3]]
     ## [1] 4 8
 
-And correlations are possible as well.
+And correlations are possible.
 
     mtcars %>% 
       as_tibble() %>% 
@@ -119,8 +118,7 @@ And correlations are possible as well.
     ## 10 gear     0.48 -0.49 -0.56 -0.13  0.7   -0.580 -0.21   0.21   0.79   1      0.27 
     ## 11 carb    -0.55  0.53  0.39  0.75 -0.091  0.43  -0.66  -0.570  0.058  0.27   1
 
-and similar to the `Hmisc::rcorr()` function the pvalues are pre
-calculated and can be easily extracted as well:
+and similar to the `Hmisc::rcorr()` function the pvalues are pre calculated and can be easily extracted:
 
     mtcars %>% 
       as_tibble() %>% 
@@ -142,6 +140,4 @@ calculated and can be easily extracted as well:
     ## 10 gear    1.33e- 3 7.68e-  4 3.33e- 4 6.39e-  2  1.01e-6 2.16e- 5  4.18e-1 1.17e-  1  2.30e-8 0.      5.31e-  1
     ## 11 carb    4.34e- 5 5.02e-  4 1.43e- 3 1.80e-  6  4.95e-1 3.58e- 3  4.15e-5 9.88e-  5  7.26e-1 5.31e-1 7.44e-232
 
-Further nice functions are `wilcox_effsize()`, `shapiro_test()` or
-`adjust_pvalue()`. Check
-[github](https://github.com/kassambara/rstatix) for more examples.
+Further nice functions are `wilcox_effsize()`, `shapiro_test()` or `adjust_pvalue()`. Check [github](https://github.com/kassambara/rstatix) for more examples.
