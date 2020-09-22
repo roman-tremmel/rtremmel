@@ -6,7 +6,7 @@ tags: [statistics, tidyverse, R, pairwise, tests, pvalue]
 ---
 
 Install the package via cran or from
-(here)\[<a href="https://github.com/kassambara/rstatix" class="uri">https://github.com/kassambara/rstatix</a>\]
+[here]\(<a href="https://github.com/kassambara/rstatix" class="uri">https://github.com/kassambara/rstatix</a>\)
 
 
     library(tidyverse)
@@ -145,5 +145,5 @@ calculated and can be easily extracted as well:
 
 Further nice functions are `wilcox_effsize()`, `shapiro_test()` or
 `adjust_pvalue()`. Check
-(github)\[<a href="https://github.com/kassambara/rstatix" class="uri">https://github.com/kassambara/rstatix</a>\]
+[github]\(<a href="https://github.com/kassambara/rstatix" class="uri">https://github.com/kassambara/rstatix</a>\)
 for more examples.
