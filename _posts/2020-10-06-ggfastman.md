@@ -1,7 +1,7 @@
 ---
 layout: post
 title: My first self-developped R-package
-subtitle: ggfastman: plotting manhattan and QQ plots in a very fast way using R. 
+subtitle: ggfastman: plotting manhattan and QQ plots in a very fast way using R
 tags: [statistics, ggplot2, R, GWAS, manhattan, pvalue, QQ, qqnorm, qqline]
 ---
 
