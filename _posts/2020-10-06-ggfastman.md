@@ -7,7 +7,7 @@ tags: [statistics, ggplot2, R, GWAS, manhattan, pvalue, QQ, qqnorm, qqline]
 
 This is my first try to create a R package on my own. Since a long time i had the idea to develop a very fast way to plot bazillions of pvalues in QQ plots and manhattan plots. 
 And just recently I stumbeled over the R package [scattermore[(https://github.com/exaexa/scattermore), which allows exactly this: Plotting many datapoints very fast. 
-In brief, the data points are rastered using C code and magic. 
+In brief, the data points are rastered using C code and some magic. 
 
 Now, it was easy to combine ggplot2 with scattermore functions to generate the plots I wanted. Ans since I need manhattan and QQ plots very often in my daily live, I put all the code in one package for easy installation and use:
 [ggfastman](https://github.com/roman-tremmel/ggfastman)
